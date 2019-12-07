@@ -1,7 +1,7 @@
-# Importance of Knowledge
+# Importance of knowledge
 `2014-02-02`
 
-## Knowledge Age
+## Knowledge age
 
 If you run a business in the [knowledge age](http://en.wikipedia.org/wiki/Knowledge_worker) then there is a good chance that it involves some kind of development. That’s were engineers come into play. You can say [engineering](http://en.wikipedia.org/wiki/Engineering) is about applying scientific knowledge and ingenuity to develop technical solutions. But because there’s always more than one solution to a problem it’s also a lot about making good decisions. Decisions that will affect the future of your business!
 
