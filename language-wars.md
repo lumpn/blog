@@ -1,4 +1,5 @@
 # Language wars
+`2014-11-14`
 
 ## Anecdote
 
@@ -26,4 +27,3 @@ Because my post turned out much longer than envisioned I'm going to break the ac
 2. Type system
 3. Polymorphism
 4. Syntax
-
