@@ -44,7 +44,7 @@ But the `foreach` pattern does not know what it gets. It expects an `IEnumerator
 IEnumerator iter = list.GetEnumerator(); // boxing conversion!
 ```
 
-Why? I don’t know. Bug, oversight, or feature? I don’t know. Does it happen for all versions of .NET? I don’t know. However, I do know that it happens in all versions of Unity released to this date, and that is bad enough for me.
+Why? I don’t know. Bug, oversight, or feature? I don’t know. Does it happen for all versions of .NET? I don’t know. However, I do know that it happens in all versions of Unity released to this date (May 2016), and that is bad enough for me.
 
 Also note that the same behavior is true for the `using` block which expects an `IDisposable`. Additionally a `using` block also emits a `null` check before disposing of the disposable, which of course doesn’t make any sense for a `struct` either.
 
