@@ -1,4 +1,5 @@
 # Boxing Day
+`2016-05-16`
 
 ## Sugar, sugar
 
@@ -82,12 +83,12 @@ for (var iter = hashSet.GetEnumerator(); iter.MoveNext();) {
 }
 ```
 
-It isn’t quite as succinct as the `foreach` loop but almost. The `for` loop syntax with empty increment statement might feel weird at first. The worst part is that the code never disposes of the enumerator. Therefore it’s borderline dangerous or simply wrong. But then again, as far as I know, for these collections there is nothing to dispose of anyway.
+It isn't quite as succinct as the `foreach` loop but almost. The `for` loop syntax with empty increment statement might feel weird at first. The worst part is that the code never disposes of the enumerator. Therefore it's borderline dangerous or simply wrong. But then again, as far as I know, for these collections there is nothing to dispose of anyway.
 
 ## Remarks
 
 C# compiles an [iterator block](https://msdn.microsoft.com/en-us/library/9k7k7cf0.aspx) using `yield` statements into an inner `class` implementing `IEnumerator`. Jon Skeet writes about [iterator blocks in great detail](http://csharpindepth.com/Articles/Chapter6/IteratorBlockImplementation.aspx). Note that it generates an inner `class`, not an inner `struct`! Therefore there is no further cost for boxing involved but `GetEnumerator()` itself already allocates memory on the heap.
 
-Why did they choose to implement it like this? I don’t know. But the implementation does adhere to the design guidelines for [choosing between `class` and `struct`](https://msdn.microsoft.com/en-us/library/ms229017.aspx). More specifically the enumerator implementing the iterator block neither is immutable, nor necessarily smaller than 16 bytes, nor logically represents a single value, and most likely it will be used in a pattern requiring boxing anyway.
+Why did they choose to implement it like this? I don't know. But the implementation does adhere to the design guidelines for [choosing between `class` and `struct`](https://msdn.microsoft.com/en-us/library/ms229017.aspx). More specifically the enumerator implementing the iterator block neither is immutable, nor necessarily smaller than 16 bytes, nor logically represents a single value, and most likely it will be used in a pattern requiring boxing anyway.
 
 Funny though that they chose to implement collection enumerators as `struct`s, since those violate at least two or three of the four characteristics as well...
