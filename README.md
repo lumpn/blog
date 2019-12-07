@@ -5,6 +5,12 @@
 - [Fair randomness](fair-randomness.md)
 - [Boxing Day](boxing-day.md)
 - [Apparent probability](apparent-probability.md)
+- [Language wars](language-wars.md)
+- [Open development](open-development.md)
+- [Importance of knowledge](knowledge.md)
+- [How to procedurally generate Zelda dungeons](procedural-zelda.md)
+- [Infinite Zelda project](infinite-zelda.md)
+- [Robot uprising](robot-uprising.md)
 
 ## Why Github?
 
