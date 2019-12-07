@@ -1,4 +1,6 @@
-# Anecdote
+# Apparent probability
+
+## Anecdote
 
 Let's say you are creating a computer game where the player explores a dungeon and every time he finds a new treasure chest there is a 10% chance it contains a rare item. A naïve implementation goes like this:
 
@@ -11,7 +13,7 @@ public bool ContainsTreasure() {
 Fairly straightforward, right? And it certainly fulfills the desired property of spawning 10% rare items. But soon the complaints of players roll in.
 > I have opened 40 chests and not a single one of them had a rare item in it. This is not 10%! My game is broken.
 
-# Perceived unfairness
+## Perceived unfairness
 
 Clearly there is nothing wrong with the implementation. It yields rare items with 10% probability on average. In fact running statistics on a sample of one million evaluations the [expected value](https://en.wikipedia.org/wiki/Expected_value) of treasure chests to open until finding a rare item is ten. So all is good, right? Wrong. Always look at the [variance](https://en.wikipedia.org/wiki/Variance) too! Turns out the variance is above 90, which basically means anything can happen. Let's graph the probability of having to open *x* number of treasure chests until finding a rare item. Here is what the distribution looks like:
 
@@ -21,7 +23,7 @@ It's easy to see that most of the time it takes less than 22 treasure chests to 
 
 This is bad, but what can we do? Let's take a step back. What we really want can't be captured by a mere 10% chance. What we want is a game experience where it takes roughly ten treasure chests to find a rare item. We don't want everlasting streaks of bad luck. We don't want long streaks of good luck either. Oh, and we don't want it to be predictable. It should feel random but fair.
 
-# Dithering
+## Dithering
 
 A good idea when trying to exert control over randomness is to start with something deterministic and then add a bit of randomness on top. Dithering is a deterministic process to generate a series of events. In our case there is only one event: loot or no loot. The implementation is as follows:
 
@@ -42,7 +44,7 @@ Again fairly straightforward. Every time a chest is opened we add 10% to the ent
 
 Resetting the `entropy` to a random value every now and then is still not great. If done too often we are back at the initial situation, if not done often enough everything becomes predictable.
 
-# Adding randomness
+## Adding randomness
 
 Of course there are other options of [adding randomness](http://gamedev.stackexchange.com/a/95696/6655) than messing with the entropy. One option is to randomize the success chance so that its expected value is 10%. Let's call it *varying*. Examples are:
 
@@ -57,7 +59,7 @@ Where `random(a, b)` returns a random value between `a` and `b`. Suffice to say 
 
 Another option is to deal a deck of cards. The deck is filled by using the deterministic dithering algorithm. Every time a treasure chest is opened a random card is drawn from the deck to determine the chests content. The deck is refilled using dithering. It is the perfect solution to prevent really long streaks of good or bad luck. The tricky part choosing the right size for the deck. Big decks play the naïve randomness, small decks play like dithering. In addition a deck based implementation needs more memory than other solutions. I tried something else.
 
-# Threshold
+## Threshold
 
 There is another straight forward option of adding randomness to the dithering algorithm. It is this line:
 
@@ -86,13 +88,13 @@ Isn't it beautiful? A nice [Poisson-esque distribution](https://en.wikipedia.org
 
 Using dithering with a randomized threshold results in aesthetically pleasing distributions that match our desired goal of creating events that *feel random but fair*. The expected value is preserved while preventing streaks of good/bad luck.
 
-# Comparison
+## Comparison
 
 ![Comparison](apparent-probability/comparison.png)
 
 A clear victory for the randomized threshold method, referred to as *Hybrid* in the graph.
 
-# In depth analysis
+## In depth analysis
 
 As I said before I found a threshold value of `c = 0.75` to yield very pleasing results. But what does `c` mean? The parameter `c` controls the amount of randomness added to the distribution. Smaller values stay closer to the deterministic distribution, large values increase variance. A value of `c >= 0.5` is necessary to allow for scoring twice in a row no matter how small the configured success probability `p`. Values of `c > 1.0` tend to make the distribution feel too random. Here is a comparison of various values of `c`:
 
