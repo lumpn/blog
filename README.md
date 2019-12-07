@@ -8,7 +8,7 @@
 
 ## Why Github?
 
-I've maintained my own webserver and hosted my own website and blog for 20 years now. Things kept breaking. Software was never meant for that kind of time frame. I want my articles to be available for at least another 20 years. Github will probably break as well, but at least it will be trivial to clone the repository.
+I've maintained my own webserver and hosted my own website and blog for 20 years now. Things keep on breaking. Software was never meant for that kind of time frame. I want my articles to be available for at least another 20 years. Github will probably break as well at some point, but at least it will be trivial to clone the repository.
 
 ## About me
 
