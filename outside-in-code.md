@@ -85,7 +85,7 @@ var separator = new Alternation(dash, space);
 var phone = new Concatenation(new Repeat(digit, 3), ...);
 ```
 
-Or I might have chosen to put everything in one class and expose a very fluent heavy interface, which makes it easy to compose sequentially, but hard to reuse parts.
+Or I might have chosen to put everything in one class and expose a very fluent heavy interface, which makes it easy to compose sequentially, but hard to reuse parts. Once captures come into play, it breaks down fast.
 
 ```csharp
 var phone = Pattern.Repeat(digit, 3)
@@ -95,11 +95,8 @@ var phone = Pattern.Repeat(digit, 3)
                    .Repeat(digit, 4);
 ```
 
-Instead, by focusing on the problem I want to solve, I was able to quickly iterate on the syntax I want to expose eventually.
+Instead, by focusing on the problem I want to solve, I was able to quickly iterate on the syntax I want to expose eventually. If you are curious how it went, take a look at my [regex composer](https://github.com/lumpn/regex-composer) prototype.
 
-## Related work
-
-
-## References
-[Outside–in software development](https://en.wikipedia.org/wiki/Outside%E2%80%93in_software_development) on Wikipedia
-[State the Problem Before Describing the Solution](https://lamport.azurewebsites.net/pubs/state-the-problem.pdf) by Leslie lamport
+## Further reading
+- [Outside–in software development](https://en.wikipedia.org/wiki/Outside%E2%80%93in_software_development) on Wikipedia
+- [State the Problem Before Describing the Solution](https://lamport.azurewebsites.net/pubs/state-the-problem.pdf) by Leslie lamport
