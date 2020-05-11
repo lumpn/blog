@@ -1,7 +1,8 @@
 # Lumpn's blog
 
-## Table of contents
+## Posts in reverse chronological order
 
+- [Outside-in development](outside-in.md)
 - [Fair randomness](fair-randomness.md)
 - [Boxing Day](boxing-day.md)
 - [Apparent probability](apparent-probability.md)
