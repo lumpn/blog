@@ -2,6 +2,7 @@
 
 ## Posts in reverse chronological order
 
+- [Imaginary problems](imaginary-problems.md)
 - [Outside-in development](outside-in.md)
 - [Fair randomness](fair-randomness.md)
 - [Boxing Day](boxing-day.md)
