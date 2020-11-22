@@ -45,4 +45,4 @@ I saw a [post by Lazlo Bonin](https://twitter.com/lazlobon/status/13302246259015
 | What coding style should I use? | The same as everyone else on your team. |
 | Where should I put my editor code? | In an `Editor` folder. |
 
-Please watch [Ryan Hipple's excellent talk on game architecture](https://www.youtube.com/watch?v=raQ3iHhE_Kk) for details.
+Please watch [Ryan Hipple's excellent talk on game architecture](https://www.youtube.com/watch?v=raQ3iHhE_Kk) and read this [guide on modular design](https://unity.com/how-to/architect-game-code-scriptable-objects). Both cover most of the questions above in detail.
