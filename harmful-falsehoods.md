@@ -7,3 +7,5 @@ We've all learned something. The world has become more and more digital. Surely,
 Enter fraud detection.
 
 ## Fraud detection
+
+Let's say you want to buy a physical book online and have it delivered to your mom's house for her birthday. Your mom has a name, her house has an address, the name on her address matches her name, you have a name, you have a credit card, the name on your credit card matches your name. This should be easy.
