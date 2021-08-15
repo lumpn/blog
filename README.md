@@ -2,6 +2,7 @@
 
 ## Posts in reverse chronological order
 
+- [Artificial Fascism](artificial-fascism.md)
 - [Unity tips](unity-tips.md)
 - [Imaginary problems](imaginary-problems.md)
 - [Outside-in development](outside-in.md)
