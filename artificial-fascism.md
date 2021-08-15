@@ -1,7 +1,7 @@
 # Artificial Fascism
 `2021-08-15`
 
-The power of automated judgement. What could possibly go wrong?
+The power of automated judgement. [What could possibly go wrong?](https://www.youtube.com/watch?v=TstteJ1eIZg)
 
 ## Face detection
 
@@ -23,6 +23,11 @@ The power of automated judgement. What could possibly go wrong?
 > &mdash; [Colin Madland (@colinmadland), 2020-09-19](https://twitter.com/colinmadland/status/1307111825851416577)
 
 ## Credit score
+
+### Bias isn’t the only problem with credit scores - and no, AI can’t help
+> The biggest ever study of real people's mortgage data shows that predictive tools are not simply biased for minority and low income groups, but less accurate too.
+>
+> &mdash; [Technology Review, 2021-06-17](https://www.technologyreview.com/2021/06/17/1026519/racial-bias-noisy-data-credit-scores-mortgage-loans-fairness-machine-learning/)
 
 ## Fraud detection
 
