@@ -18,7 +18,7 @@ The power of automated judgement. [What could possibly go wrong?](https://www.yo
 > &mdash; [Tony Arcieri (@bascule), 2020-09-19](https://twitter.com/bascule/status/1307440596668182528)"
 
 ### Zoom
-> Turns out [@zoom_us](https://twitter.com/zoom_us) has a crappy face-detection algorithm that erases black faces...and determines that a nice pale globe in the background must be a better face than what should be obvious.
+> Turns out @zoom_us has a crappy face-detection algorithm that erases black faces...and determines that a nice pale globe in the background must be a better face than what should be obvious.
 >
 > &mdash; [Colin Madland (@colinmadland), 2020-09-19](https://twitter.com/colinmadland/status/1307111825851416577)
 
