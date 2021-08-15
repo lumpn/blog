@@ -68,3 +68,8 @@ The power of automated judgement. [What could possibly go wrong?](https://www.yo
 > In what may be the first known case of its kind, a faulty facial recognition match led to a Michigan man's arrest for a crime he did not commit.
 >
 > &mdash; [New York Times, 2020-08-03](https://www.nytimes.com/2020/06/24/technology/facial-recognition-arrest.html)
+
+### HU facial recognition software predicts criminality
+> A group of Harrisburg University professors and a Ph.D. student have developed automated computer facial recognition software capable of predicting whether someone is likely going to be a criminal.
+>
+> &mdash; [Harrisburg University, 2020-05-06](https://web.archive.org/web/20200506013352/https://harrisburgu.edu/hu-facial-recognition-software-identifies-potential-criminals/)
