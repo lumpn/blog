@@ -43,6 +43,11 @@ The power of automated judgement. [What could possibly go wrong?](https://www.yo
 >
 > &mdash; [Gamasutra, 2021-08-10](https://www.gamasutra.com/view/news/386534/Xsolla_lays_off_150_after_an_algorithm_ruled_staff_unengaged_and_unproductive.php)
 
+### Fired by Bot at Amazon: ‘It’s You Against the Machine’
+> Stephen Normandin spent almost four years racing around Phoenix delivering packages as a contract driver for Amazon.com Inc. Then one day, he received an automated email. The algorithms tracking him had decided he wasn’t doing his job properly.
+>
+> &mdash; [Bloomberg, 2021-06-28](https://www.bloomberg.com/news/features/2021-06-28/fired-by-bot-amazon-turns-to-machine-managers-and-workers-are-losing-out)
+
 ## Sentiment analysis
 
 ### Indigo Airline’s Twitter fiasco — Sentiment classification gone wrong
@@ -67,9 +72,14 @@ The power of automated judgement. [What could possibly go wrong?](https://www.yo
 ### Wrongfully Accused by an Algorithm
 > In what may be the first known case of its kind, a faulty facial recognition match led to a Michigan man's arrest for a crime he did not commit.
 >
-> &mdash; [New York Times, 2020-08-03](https://www.nytimes.com/2020/06/24/technology/facial-recognition-arrest.html)
+> &mdash; [The New York Times, 2020-08-03](https://www.nytimes.com/2020/06/24/technology/facial-recognition-arrest.html)
 
 ### HU facial recognition software predicts criminality
 > A group of Harrisburg University professors and a Ph.D. student have developed automated computer facial recognition software capable of predicting whether someone is likely going to be a criminal.
 >
 > &mdash; [Harrisburg University, 2020-05-06](https://web.archive.org/web/20200506013352/https://harrisburgu.edu/hu-facial-recognition-software-identifies-potential-criminals/)
+
+### Artificial intelligence is ripe for abuse, tech researcher warns: 'a fascist's dream'
+> Crawford was concerned about the potential use of AI in predictive policing systems, which already gather the kind of data necessary to train an AI system. Such systems are flawed, as shown by a Rand Corporation study of Chicago’s program. The predictive policing did not reduce crime, but did increase harassment of people in “hotspot” areas.
+>
+> &mdash; [The Guardian, 2017-03-13](https://www.theguardian.com/technology/2017/mar/13/artificial-intelligence-ai-abuses-fascism-donald-trump)
