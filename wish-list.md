@@ -15,6 +15,10 @@ I wish there was a cloud service and app with an API for league based leaderboar
 
 [Histograms](https://en.wikipedia.org/wiki/Histogram) are great for visualizing distributions, however the results are highly dependent on the size of the bins. Instead of fixed size bins I wish [quantile](https://en.wikipedia.org/wiki/Quantile) based bins would be the norm.
 
+## Event flow analytics
+
+I wish there was a way to ask an analytics service which one of two events appears first. I wish I could track events not only by user and session but also across sessions. I wish the service could visualize the flow of events.
+
 ## Node editor
 
 There are countless node graph editors and none of them are great. For over 30 years the gold standard for automatic layout has been and still is [Graphviz](https://graphviz.org/). I wish there was a way to move nodes around manually while still retaining reasonable a layout.
