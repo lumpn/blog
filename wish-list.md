@@ -1,7 +1,7 @@
 # Wish list
 `2021-09-05`
 
-Software I wish existed but doesn't.
+Software and services I wish existed but don't.
 
 ## Leaderboards
 
