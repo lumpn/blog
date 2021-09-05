@@ -2,6 +2,7 @@
 
 ## Posts in reverse chronological order
 
+- [Wish list](wish-list.md)
 - [Artificial Fascism](artificial-fascism.md)
 - [Unity tips](unity-tips.md)
 - [Imaginary problems](imaginary-problems.md)
