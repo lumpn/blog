@@ -1,7 +1,7 @@
 # Wish list
 `2021-09-05`
 
-Things, apps, and frameworks I wish existed but don't.
+Software I wish existed but doesn't.
 
 ## Leaderboards
 
