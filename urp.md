@@ -3,6 +3,11 @@
 
 A summary of how to profile Unity's Scriptable Render Pipeline. This includes [URP](https://docs.unity3d.com/Manual/universal-render-pipeline.html), [HDRP](https://docs.unity3d.com/Manual/high-definition-render-pipeline.html), and custom [SRP](https://docs.unity3d.com/Manual/ScriptableRenderPipeline.html)s.
 
+## TL;DR:
+1. Forget about GPU instancing.
+2. Forget about `MaterialPropertyBlock`s.
+3. Careful with unintentional shader variants.
+
 ## Profiling the Built-in Render Pipeline
 Back in the old days Unity only had a single render pipeline, now called the [Built-in Render Pipeline](https://docs.unity3d.com/Manual/built-in-render-pipeline.html) (BiRP). Profiling what the BiRP is doing is easy enough.
 
@@ -31,6 +36,10 @@ The first thing to note when profiling the Scriptable Render Pipeline is that th
 
 ### GPU instancing
 Using SRP, GPU instancing does not work. Try as you might, the number of batched draw calls due to instancing is always zero. That is because [SRP comes with its own batcher](https://docs.unity3d.com/Manual/SRPBatcher.html) and Unity prioritizes that SRP batcher over GPU instancing.
+
+| Render pipeline | Foo |
+-------------------------
+| bar | baz |
 
 ### Static batching
 Static batching works
