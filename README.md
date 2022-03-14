@@ -2,6 +2,7 @@
 
 ## Posts in reverse chronological order
 
+- [Profiling the Scriptable Render Pipeline](render-pipeline.md)
 - [Wish list](wish-list.md)
 - [Artificial Fascism](artificial-fascism.md)
 - [Unity tips](unity-tips.md)
