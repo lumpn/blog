@@ -38,8 +38,8 @@ The first thing to note when profiling the Scriptable Render Pipeline is that th
 Using SRP, GPU instancing does not work. Try as you might, the number of batched draw calls due to instancing is always zero. That is because [SRP comes with its own batcher](https://docs.unity3d.com/Manual/SRPBatcher.html) and Unity prioritizes that SRP batcher over GPU instancing.
 
 | Render pipeline | Foo |
--------------------------
-| bar | baz |
+|-----------------|-----|
+| bar             | baz |
 
 ### Static batching
 Static batching works
