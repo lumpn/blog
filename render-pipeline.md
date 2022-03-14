@@ -86,17 +86,15 @@ Most importantly, the `URP/Lit` shader is a "smart" uber shader that strips out 
 
 Use as few variants as possible. Use the frame debugger to verify.
 
+### Compatibility
+All lit and unlit shaders in the High Definition Render Pipeline (HDRP) and the Universal Render Pipeline (URP) are compatible with the SRP batcher. That's probably all you need to know.
 
+![Compatibility](https://docs.unity3d.com/uploads/Main/SRP_batcher_shader_compatibility.png)
 
-## Notes
-- Rendering profiler doesn't show SRP batches
-- Stats panel doesn't show SRP batches.
-- Frame debugger shows SRP batches.
-- `MaterialPropertyBlock` break SRP batcher.
-- SRP batcher is not as fast as GPU instancing but close and way more flexible.
-- SRP batches across material instances if the shader variant is the same
-- a shader variant consists of a shader and its keywords
-- `URP/Lit` optimizes away unused passes based on the textures assigned. this creates variants.
+If you must use custom shaders, follow the [requirements](https://docs.unity3d.com/Manual/SRPBatcher.html#shader-compatibility) and double check the inspector panel to see if it worked.
+
+## Summary
+The SRP batcher is great but the profilers have not been updated yet. Use the frame debugger to get accurate reports. Don't use `MaterialPropertyBlock`s anymore. Don't bother with GPU instancing settings. Use as many materials as you want. Use `URP/Lit` for everything. Use the frame debugger to double check that the shader keywords are the same across your materials.
 
 ## References
 - https://docs.unity3d.com/Manual/built-in-render-pipeline.html
