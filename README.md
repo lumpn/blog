@@ -24,6 +24,4 @@ I've maintained my own webserver and hosted my own website and blog for 20 years
 
 ## About me
 
-- [Twitter: @codelumpn](https://twitter.com/codelumpn)
-- [StackOverflow: lumpn](http://careers.stackoverflow.com/lumpn)
-- [LinkedIn: Jonas Bötel](http://linkedin.com/in/jonasboetel)
+- [Website](https://lumpn.de)
