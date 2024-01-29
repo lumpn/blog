@@ -46,11 +46,25 @@ Oh no.
 
 ## Flood fill
 
+![flood fill](evolution-wrong/floodfill.png)
+
+Flood fill can solve any maze. If there exists a path at all, flood fill will find it. If there is a goal, flood fill will reach it without even searching for it, without even knowing it exists. It would be a stretch to call flood fill a [search algorithm](https://en.wikipedia.org/wiki/Search_algorithm) and yet it finds everything. It would be even more of a stretch to call flood fill an optimization algorithm, yet it finds the _shortest_ path to the goal. And it never gets stuck in some local optimum.
+
+Furthermore, if you imagine flood fill on a dynamic map where walls spawn in and out of existence, flood fill will still work if you keep all your visited nodes in the open set.
+
+If you pause flood fill at any point and unwind all the paths it has taken so far, tracing back to the root, you get something that looks remarkably close to a tree of life. If you look at a particular path from the root to any goal, you can reconstruct the steps it took to get there, surprisingly often going in the wrong direction first to get around some obstacle along the way. You can then create a story about how smart it must have been in order to be able to find this unlikely path.
+
+But you know that it's just flood fill. All it does is expanding from nodes that it has already visited to nodes that it hasn't visited.
+
+## Stepping stones
+
+It turns out that expanding from visited nodes is all you need. You can call these nodes [stepping stones](https://wiki.santafe.edu/images/3/34/Stanley_innovation_workshop14.pdf) and even if you don't know where they lead, as long as you keep collecting more stepping stones you will eventually get somewhere. Everywhere, in fact.
+
+Counterintuitively, [just collecting stepping stones can even be faster at reaching your goal than heading straight for the goal](https://www.youtube.com/watch?v=dXQPL9GooyI). For ambitious goals this basically happens all the time, almost by definition, because if you knew how to break down the path to your goal into actionable steps then it wouldn't be particularly ambitious.
+
+We can even exploit this concept by building an optimization algorithm that optimizes for novelty. [Novelty search](https://www.cs.swarthmore.edu/~meeden/DevelopmentalRobotics/lehmanNoveltySearch11.pdf) simply rewards being different, and it works remarkably well. This has wide ranging implications for people in research and in creative fields.
+
+## Assembly theory
+
 TODO Jonas:
-- flood filling a maze
-- unwind paths to show tree
-- novelty search
 - assembly theory
-- interestingness
-- creativity
-- research
