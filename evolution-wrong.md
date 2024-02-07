@@ -56,7 +56,7 @@ If you pause flood fill at any point and unwind all the paths it has taken so fa
 
 But you know that it's just flood fill. All it does is expanding from nodes that it has already visited to nodes that it hasn't visited.
 
-## Stepping stones
+## Novelty search
 
 It turns out that expanding from visited nodes is all you need. You can call these nodes [stepping stones](https://wiki.santafe.edu/images/3/34/Stanley_innovation_workshop14.pdf) and even if you don't know where they lead, as long as you keep collecting more stepping stones you will eventually get somewhere. Everywhere, in fact.
 
@@ -66,5 +66,4 @@ We can even exploit this concept by building an optimization algorithm that opti
 
 ## Assembly theory
 
-TODO Jonas:
-- assembly theory
+TODO Jonas: Compare to [assembly theory](https://www.nature.com/articles/s41586-023-06600-9) and how building blocks arise as stable stepping stones through self-replication.
