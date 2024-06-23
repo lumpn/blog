@@ -45,10 +45,10 @@ A slight variation of the 2x7-bag strategy is to think of the pieces as colored.
 
 While these two strategies share many properties, they are not identical. The two-bag strategy uniformly picks a bag, while the red/blue strategy is more likely to pick the color that has more pieces left, leading to a slightly more balanced feel.
 
-Both are very easy to implement and scale to arbitrary many elements while requiring a linear amount of memory.
+Both are very easy to implement and scale to arbitrary many elements while requiring a linear amount of memory. Maybe don't use them for Tetris though, because a 24 piece drought is still pretty rough.
 
 ## Further Reading
 - [The history of Tetris randomizers](https://simon.lc/the-history-of-tetris-randomizers) by Simon Laroche
 - [Playing forever](https://tetris.wiki/Playing_forever) by Tetris Wiki
-- [Apparent Probability](apparent-probability.html) by me
-- [Fair Randomness](fair-randomness.html) by me
+- [Apparent Probability](apparent-probability.md) by me
+- [Fair Randomness](fair-randomness.md) by me
