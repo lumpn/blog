@@ -107,6 +107,6 @@ The SRP batcher is great but the profilers have not been updated yet. Use the fr
 - https://docs.unity3d.com/Manual/optimizing-draw-calls.html
 - https://docs.unity3d.com/Manual/GPUInstancing.html
 - https://docs.unity3d.com/Manual/static-batching.html
-- https://docs.unity3d.com/Manual/dynamic-batching.html).
+- https://docs.unity3d.com/Manual/dynamic-batching.html
 - https://docs.unity3d.com/Manual/SRPBatcher.html
 - https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html
