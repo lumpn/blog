@@ -50,5 +50,6 @@ Both are very easy to implement and scale to arbitrary many elements while requi
 ## Further Reading
 - [The history of Tetris randomizers](https://simon.lc/the-history-of-tetris-randomizers) by Simon Laroche
 - [Playing forever](https://tetris.wiki/Playing_forever) by Tetris Wiki
+- [Dealing Cards](https://gamesfromwithin.com/dealing-cards) by Noel Llopis
 - [Apparent Probability](apparent-probability.md) by me
 - [Fair Randomness](fair-randomness.md) by me
