@@ -33,7 +33,7 @@ Although, remember humans? We're complex and clever and awesome. Evolution produ
 
 ## Complexity
 
-Okay, so how about this: evolution is optimizing for increase in complexity. Look at the [tree of life](https://en.wikipedia.org/wiki/Tree_of_life_(biology), We're clearly seeing an increase in complexity at every level, so evolution has to be searching for that, right? It can't just be randomly changing DNA and seeing what sticks, right? It can't just be an exhaustive search like [flood fill](https://en.wikipedia.org/wiki/Tree_of_life_(biology)). Flood fill could never produce complexity. Flood fill just does...
+Okay, so how about this: evolution is optimizing for increase in complexity. Look at the [tree of life](https://en.wikipedia.org/wiki/Tree_of_life_(biology), We're clearly seeing an increase in complexity at every level, so evolution has to be searching for that, right? It can't just be randomly changing DNA and seeing what sticks, right? It can't just be an exhaustive search like [flood fill](https://en.wikipedia.org/wiki/Tree_of_life_%28biology%29). Flood fill could never produce complexity. Flood fill just does...
 
 | Evolution            | Flood fill     |
 |----------------------|----------------|
